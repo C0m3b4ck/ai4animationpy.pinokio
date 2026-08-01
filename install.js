@@ -32,10 +32,10 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",
-        venv_python: "3.12",
+        venv_python: "3.12.13",
         path: "app",
         message: [
-          "uv pip install torch torchvision torchaudio numpy scipy matplotlib scikit-learn einops pygltflib==1.16.5 pyscreenrec==0.6 tqdm pyyaml onnx==1.19.1 raylib",
+          "uv pip install torch torchvision torchaudio numpy scipy matplotlib scikit-learn einops pygltflib==1.16.5 pyscreenrec==0.6 tqdm pyyaml onnx==1.19.1 raylib soundfile sounddevice",
           "uv pip install fastapi \"uvicorn[standard]\"",
           "uv pip install -e . --no-deps"
         ]

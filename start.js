@@ -1,5 +1,6 @@
 module.exports = async (kernel) => {
-  const PORT = await kernel.port()
+  const HOST = process.env.HOST || "127.0.0.1"
+  const PORT = process.env.PORT || `${await kernel.port()}`
   return {
     daemon: true,
     run: [{
@@ -7,10 +8,10 @@ module.exports = async (kernel) => {
       params: {
         path: ".",
         venv: "app/env",
-        venv_python: "3.12",
+        venv_python: "3.12.13",
         env: {
-          HOST: "127.0.0.1",
-          PORT: `${PORT}`
+          HOST,
+          PORT
         },
         message: "python webdemo/run.py",
         on: [{

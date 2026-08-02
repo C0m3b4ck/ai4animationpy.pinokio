@@ -1,6 +1,6 @@
 {
   "title": "AI4AnimationPy",
-  "description": "A Python framework for AI-driven character animation using neural networks.",
+  "description": "Minimal local web playground for AI4AnimationPy character and motion demos",
   "link": "https://github.com/facebookresearch/ai4animationpy",
   "icon": "icon.png"
 }

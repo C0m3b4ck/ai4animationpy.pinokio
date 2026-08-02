@@ -1,5 +1,6 @@
 module.exports = {
   version: "7.0",
+  // title/description are mirrored in pinokio.json (static launcher metadata); keep them in sync
   title: "AI4AnimationPy",
   icon: "icon.png",
   description: "Minimal local web playground for AI4AnimationPy character and motion demos",
